@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body{
+  background: #12001f;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   width: 100%;
+   overflow: hidden;
+}
+
+#text {
+  width:100%;
+  height:100%;
+  color: #edffe0;
+  font-family: 'Lato';
+  font-size: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+
+.card{
+  width: 250px;
+  height: 350px;
+  background: #12001f;
+  position: absolute;
+  box-shadow: 0 0 1em black;
+  border-radius: 8px;
+  z-index: 1000;
+
+}
+
+.card:hover{
+  box-shadow: 0 0 2em silver;
+  transition-duration: 1s;
+}
+
+
+.card-background{
+  width: 270px;
+  height: 370px;
+  background-image: linear-gradient(90deg, rgba(0,182,204,1) 0%, rgba(81,0,186,1) 50%, rgba(255,0,82,1) 100%);
+  background-size: 300% 100%;
+  animation: gradient 1.5s infinite alternate;
+  border-radius: 8px;
+   box-shadow: 0 0 1em black;
+
+
+  
+}
+
+
+@keyframes gradient{
+  0% {
+    background-position-x: 0%;
+  }
+  50%{
+   background-position-x: 50%;
+  }
+  
+  100% {
+    background-position-x: 100%;
+
+  }
+}
